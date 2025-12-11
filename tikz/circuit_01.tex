@@ -1,0 +1,16 @@
+\begin{circuitikz}[scale=0.6, every node/.style={scale=0.6}]
+    \draw
+        (0,0) node[left]{u(t)}
+        to[R,l=$R$,o-] ++ (2,0)  node[right] (R) {}
+        to[C,l=$C_1$,-*] ++ (2,0) node[anchor = south west] (y) {y(t)}
+        to[C,l=$C_2$] ++ (2,0) node[tlground,rotate=90]{}
+    ;
+    \draw
+        (2,0) to[short] ++ (0,2)
+        to[R,l=$R_c$] ++ (2,0)
+        to[short] ++ (0,-2)
+        to[R,l=$R_L$] ++ (0,-2)
+        to[L,l=$L$] ++ (2,0)
+        node[tlground,rotate=90] {}
+    ;
+\end{circuitikz}

@@ -1,0 +1,70 @@
+%! Tex program = lualatex
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath,oldgerm}
+%%custom
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[siunitx, american, cute inductors]{circuitikz} % Circuitos
+\usepackage{caption} % Legenda nas figuras
+\usepackage{siunitx} %unidade no SI
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{colortbl} %colorir tabela
+%%endcustom
+% Para justificar o texto
+\usepackage{ragged2e}
+\justifying
+
+%para o cronograma
+\usepackage{multirow}
+%para códigos
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{subcaption} %permite o aninhamento de imagens
+
+\apptocmd{\frame}{}{\justifying}{} % Allow optional arguments after frame.
+
+\usetheme{sintef}
+
+\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+
+\usefonttheme[onlymath]{serif}
+
+\titlebackground*{assets/background}
+
+\newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
+
+\title{Tittle}
+\subtitle{Subtittle}
+\author{
+\textbf{Fulano de Souza}\quad
+\textbf{Joe Ferreira Scholtz} \newline
+\textbf{Ciclano da Silva}
+}
+\date{Jan 2000}
+
+\toctittle{Table of Contents}
+
+
+\begin{document}
+\maketitle
+
+\input{slides/01_intro}
+
+\input{slides/controle modular local.tex}
+
+\input{slides/02_Obj.tex}
+
+\input{slides/03_Planta.tex}
+
+\input{slides/04_Controle.tex}
+
+\input{slides/98_Crono.tex}
+ 
+\input{slides/99_Conclusao} 
+
+\backmatter
+
+\bibliographystyle{plain}
+\bibliography{ref.bib}
+\end{document}
