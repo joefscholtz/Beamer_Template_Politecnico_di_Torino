@@ -1,0 +1,32 @@
+\section{Controle Modular Local}
+
+\begin{frame}{Composição paralela das subplantas assíncronas.}
+
+    \begin{itemize}
+        \item \textbf{Modelagem individual de cada componente;} 
+    \end{itemize}
+
+    Plantas com restrições individuais
+
+    \begin{itemize}
+        \item \textit{Processing Machine 1}
+        \item \textit{Processing Machine 2}
+    \end{itemize}
+
+    Ambas restrições são independentes, e ligeiramente diferentes, e comandam o \textbf{ciclo de funcionamento} das \textit{Processing Machines}, que trabalham de forma autônoma ao resto do sistema executam suas respectivas ações - de enchimento com \textit{milkshake} e cobertura - uma vez que o sensor acuse a chegada do copo.
+
+
+\end{frame}
+
+\begin{frame}{\textit{Processing Machine} (PM1).}
+
+    Restricão para a subplanta composta apenas da \textit{Processing Machine 1}.
+
+    \begin{figure}[htbp]
+        \centering
+        \resizebox{0.7\textwidth}{!}{\input{tikz/restricoes/H_PM1.tex}}
+        \caption{Restrição para PM1.}
+        \label{fig:H_PM1}
+    \end{figure}
+
+\end{frame}

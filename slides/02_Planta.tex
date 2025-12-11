@@ -1,0 +1,63 @@
+\section{Planta}
+
+
+\begin{frame}{Proposta}
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}[htbp]
+            \centering
+            \resizebox{0.8\textwidth}{!}{\input{tikz/modelo/modeloCaminhos.tex}}
+            \caption{Planta para a máquina de \textit{milkshake}.}
+            \label{fig:sistema}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}[htbp]
+            \centering
+            \begin{minipage}{\textwidth}
+                \centering
+                \resizebox{0.2\textwidth}{!}
+                {\input{tikz/milkshakes/milk_00.tex}}
+                \subcaption{\textit{Milkshake} \textbf{sem} cobertura.}\label{fig:milk_00}
+            \end{minipage}
+            \begin{minipage}{\textwidth}
+                \centering
+                \resizebox{0.2\textwidth}{!}
+                {\input{tikz/milkshakes/milk_01.tex}}
+                \subcaption{\textit{Milkshake} \textbf{com} cobertura.}\label{fig:milk_01}
+            \end{minipage}\\
+            \caption{\textit{Milkshakes} servidos pela máquina.}
+            \label{fig:visualServoing}
+        \end{figure}
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Nova proposta}
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}[htbp]
+            \centering
+            \resizebox{0.8\textwidth}{!}{\input{tikz/modelo/modeloCaminhos.tex}}
+            \caption{Planta para a máquina de \textit{milkshake}.}
+            \label{fig:sistema}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        O sistema representa, então, uma máquina que pode fazer \textit{milkshakes} \textbf{com} e \textbf{sem} cobertura.
+        
+        \vspace{0.5cm} \textbf{2 tipos} de \textit{milkshakes} de saída:
+        \begin{enumerate}
+            \justifying
+            \item \textbf{\textcolor{violet}{Com cobertura:}} SF $\rightarrow$ RB $\rightarrow$ PM1 $\rightarrow$ RB $\rightarrow$ DS $\rightarrow$ PM2 $\rightarrow$ XS2;
+            \item \textbf{\textcolor{green}{Sem cobertura:}} SF $\rightarrow$ RB $\rightarrow$ PM1 $\rightarrow$ RB $\rightarrow$ DS $\rightarrow$ XS1.
+        \end{enumerate}
+
+        \vspace{0.5cm} O sistema intercala entre os tipos de \textit{milkshake}.
+    \end{column}
+\end{columns}
+
+\end{frame}
